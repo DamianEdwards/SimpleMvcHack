@@ -1,0 +1,15 @@
+﻿@inherits ViewPage<ViewModel>
+@* @model ViewModel *@
+@functions {
+    public IActionResult Index()
+    {
+        return View(new ViewModel { Message = $"Hello, World! Time is {DateTime.Now}." });
+    }
+
+    public class ViewModel
+    {
+        public string Message { get; set; }
+    }
+}
+
+@Model.Message
