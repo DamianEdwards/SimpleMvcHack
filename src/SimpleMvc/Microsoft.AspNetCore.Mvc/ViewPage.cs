@@ -253,7 +253,7 @@ namespace Microsoft.AspNetCore.Mvc
         /// <summary>
         /// Gets or sets the <see cref="ClaimsPrincipal"/> for user associated with the executing action.
         /// </summary>
-        public ClaimsPrincipal User
+        public new ClaimsPrincipal User
         {
             get
             {
@@ -1491,7 +1491,7 @@ namespace Microsoft.AspNetCore.Mvc
         /// <summary>
         /// Gets or sets <see cref="ITempDataDictionary"/> used by <see cref="ViewResult"/>.
         /// </summary>
-        public ITempDataDictionary TempData
+        public new ITempDataDictionary TempData
         {
             get
             {
@@ -1517,7 +1517,7 @@ namespace Microsoft.AspNetCore.Mvc
         /// <summary>
         /// Gets the dynamic view bag.
         /// </summary>
-        public dynamic ViewBag
+        public new dynamic ViewBag
         {
             get
             {
